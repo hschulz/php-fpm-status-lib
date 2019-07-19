@@ -2,8 +2,8 @@
 
 namespace Hschulz\FpmStatus\Analysis;
 
-use \Hschulz\FpmStatus\Analysis\StatusReporterInterface;
 use \Hschulz\FpmStatus\Analysis\Performance\ManagerInterface;
+use \Hschulz\FpmStatus\Analysis\StatusReporterInterface;
 use \Hschulz\FpmStatus\Model\Entry;
 use \Hschulz\FpmStatus\Model\PoolConfig;
 use \Hschulz\FpmStatus\Model\Report;
@@ -158,7 +158,6 @@ abstract class AbstractStatusReporter implements StatusReporterInterface
         $fqns = '\\' . __NAMESPACE__ . '\\Performance\\' . $type . 'Manager';
 
         if (!class_exists($fqns)) {
-
             $message = sprintf('Manager for type "%s" not found', $type);
 
             $this->report->add(new Entry($message, Entry::STATUS_ERROR, Priority::HIGH));
