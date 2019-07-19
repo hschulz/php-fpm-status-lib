@@ -1,0 +1,18 @@
+language: php
+
+php:
+    - 7.2
+    - 7.3
+
+notifications:
+    email:
+        on_success: never
+
+before_script:
+    - travis_retry composer self-update
+    - travis_retry composer install
+
+script:
+    - vendor/bin/phpunit --bootstrap=vendor/autoload.php --whitelist=src/ --coverage-clover=coverage.xml Tests/
+
+after_success: bash <(curl -s https://codecov.io/bash)
