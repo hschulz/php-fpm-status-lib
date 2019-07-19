@@ -180,6 +180,6 @@ final class ProcessTest extends TestCase
 
         $subject->setUser('unit');
 
-         $this->assertEquals('unit', $subject->getUser());
+        $this->assertEquals('unit', $subject->getUser());
     }
 }

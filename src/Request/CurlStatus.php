@@ -2,16 +2,16 @@
 
 namespace Hschulz\FpmStatus\Request;
 
-use \Exception;
-use \Hschulz\FpmStatus\Model\Status;
-use const \CURLOPT_FOLLOWLOCATION;
-use const \CURLOPT_RETURNTRANSFER;
-use const \CURLOPT_URL;
 use function \curl_close;
 use function \curl_error;
 use function \curl_init;
 use function \curl_setopt;
+use const \CURLOPT_FOLLOWLOCATION;
+use const \CURLOPT_RETURNTRANSFER;
+use const \CURLOPT_URL;
+use \Exception;
 use function \get_resource_type;
+use \Hschulz\FpmStatus\Model\Status;
 use function \json_decode;
 use function \json_last_error_msg;
 

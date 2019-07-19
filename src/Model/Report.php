@@ -2,8 +2,8 @@
 
 namespace Hschulz\FpmStatus\Model;
 
-use \Hschulz\FpmStatus\Model\Entry;
 use function \array_search;
+use \Hschulz\FpmStatus\Model\Entry;
 
 /**
  * Description of Report
@@ -48,7 +48,7 @@ class Report
      */
     public function remove(Entry $entry): void
     {
-        $result = array_search($entry, $this->entries. true);
+        $result = array_search($entry, $this->entries . true);
 
         if ($result !== false) {
             unset($this->entries[$result]);

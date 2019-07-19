@@ -9,5 +9,4 @@ use \Hschulz\FpmStatus\Analysis\Performance\AbstractManager;
  */
 class OndemandManager extends AbstractManager
 {
-
 }
