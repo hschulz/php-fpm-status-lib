@@ -17,5 +17,5 @@ interface StatusReporterInterface
      * @param PoolConfig|null $config
      * @return Report
      */
-    public function generate(Status $status, ?PoolConfig $config = null): Report;
+    public function generate(Status $status, ?PoolConfig $config = null);
 }

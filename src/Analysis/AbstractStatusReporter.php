@@ -45,15 +45,34 @@ abstract class AbstractStatusReporter implements StatusReporterInterface
 
     /**
      *
+     * @return Report
+     */
+    protected function getReport()
+    {
+        return new Report();
+    }
+
+    /**
+     *
+     * @param Entry $entry
+     * @return void
+     */
+    protected function addEntry(Entry $entry): void
+    {
+        $this->report->add($entry);
+    }
+
+    /**
+     *
      * @param Status $status
      * @param PoolConfig|null $config
      * @return Report
      */
-    public function generate(Status $status, ?PoolConfig $config = null): Report
+    public function generate(Status $status, ?PoolConfig $config = null)
     {
         $this->status = $status;
         $this->config = $config;
-        $this->report = new Report();
+        $this->report = $this->getReport();
 
         $entries = [];
 
@@ -64,13 +83,17 @@ abstract class AbstractStatusReporter implements StatusReporterInterface
 
         for ($i = 0; $i < 4; ++$i) {
             if ($entries[$i] !== null) {
-                $this->report->add($entries[$i]);
+                $this->addEntry($entries[$i]);
             }
         }
 
-        $this->report->add(new Entry('FPM is running'));
+        $this->addEntry(new Entry('FPM is running'));
 
-        $this->calcPerformance();
+        $result = $this->calcPerformance();
+
+        if ($result !== null) {
+            $this->addEntry($result);
+        }
 
         return $this->report;
     }
@@ -151,7 +174,7 @@ abstract class AbstractStatusReporter implements StatusReporterInterface
      *
      * @return void
      */
-    protected function calcPerformance(): void
+    protected function calcPerformance(): ?Entry
     {
         $type = ucfirst($this->status->getManager());
 
@@ -161,13 +184,14 @@ abstract class AbstractStatusReporter implements StatusReporterInterface
 
             $message = sprintf('Manager for type "%s" not found', $type);
 
-            $this->report->add(new Entry($message, Entry::STATUS_ERROR, Priority::HIGH));
-            return;
+            return new Entry($message, Entry::STATUS_ERROR, Priority::HIGH);
         }
 
         /* @var $manager ManagerInterface */
         $manager = new $fqns($this->status, $this->config);
 
-        $this->report->setPerformance($manager->getPerformance($this->status, $this->config));
+        $this->report->setPerformance($manager->getPerformanceData($this->status, $this->config));
+
+        return null;
     }
 }
