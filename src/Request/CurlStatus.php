@@ -69,7 +69,7 @@ class CurlStatus
     public function getArray(string $url): array
     {
         try {
-            $response = $this->get($url);
+            $response = $this->getJson($url);
         } catch (Exception $e) {
             throw $e;
         }
