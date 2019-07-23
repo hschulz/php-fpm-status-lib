@@ -235,7 +235,7 @@ class Status
         $this->startTime = $data[self::FIELD_START_TIME] ?? 0;
         $this->totalProcesses = $data[self::FIELD_TOTAL_PROCESSES] ?? 0;
 
-        if (!empty($data[self::FIELD_PROCESSES]) && is_array($data[self::FIELD_PROCESSES]) ) {
+        if (!empty($data[self::FIELD_PROCESSES]) && is_array($data[self::FIELD_PROCESSES])) {
             $this->readProcessData($data[self::FIELD_PROCESSES]);
         }
     }
