@@ -10,37 +10,37 @@ class Entry
     /**
      * @var int
      */
-    const PRIORITY_LOWEST = 0;
+    public const PRIORITY_LOWEST = 0;
 
     /**
      * @var int
      */
-    const PRIORITY_LOW = 25;
+    public const PRIORITY_LOW = 25;
 
     /**
      * @var int
      */
-    const PRIORITY_MEDIUM = 50;
+    public const PRIORITY_MEDIUM = 50;
 
     /**
      * @var int
      */
-    const PRIORITY_HIGH = 75;
+    public const PRIORITY_HIGH = 75;
 
     /**
      * @var int
      */
-    const PRIORITY_HIGHEST = 100;
+    public const PRIORITY_HIGHEST = 100;
 
     /**
      * @var int
      */
-    const STATUS_OK = 0;
+    public const STATUS_OK = 0;
 
     /**
      * @var int
      */
-    const STATUS_ERROR = 1;
+    public const STATUS_ERROR = 1;
 
     /**
      *

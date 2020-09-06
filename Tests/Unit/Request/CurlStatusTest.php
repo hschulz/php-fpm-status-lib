@@ -2,8 +2,8 @@
 
 namespace Hschulz\FpmStatus\Tests\Unit\Request;
 
-use \Hschulz\FpmStatus\Request\CurlStatus;
-use \PHPUnit\Framework\TestCase;
+use Hschulz\FpmStatus\Request\CurlStatus;
+use PHPUnit\Framework\TestCase;
 
 /**
  * Description of CurlStatusTest

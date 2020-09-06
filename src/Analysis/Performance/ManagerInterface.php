@@ -2,8 +2,8 @@
 
 namespace Hschulz\FpmStatus\Analysis\Performance;
 
-use \Hschulz\FpmStatus\Model\PoolConfig;
-use \Hschulz\FpmStatus\Model\Status;
+use Hschulz\FpmStatus\Model\PoolConfig;
+use Hschulz\FpmStatus\Model\Status;
 
 /**
  *

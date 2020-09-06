@@ -2,8 +2,8 @@
 
 namespace Hschulz\FpmStatus\Tests\Unit\Model;
 
-use \Hschulz\FpmStatus\Model\Entry;
-use \PHPUnit\Framework\TestCase;
+use Hschulz\FpmStatus\Model\Entry;
+use PHPUnit\Framework\TestCase;
 
 /**
  * Description of EntryTest

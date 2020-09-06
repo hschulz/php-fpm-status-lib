@@ -2,8 +2,8 @@
 
 namespace Hschulz\FpmStatus\Tests\Unit\Model;
 
-use \Hschulz\FpmStatus\Model\Process;
-use \PHPUnit\Framework\TestCase;
+use Hschulz\FpmStatus\Model\Process;
+use PHPUnit\Framework\TestCase;
 
 /**
  * Description of ProcessTest
