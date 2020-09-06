@@ -2,8 +2,7 @@
 
 namespace Hschulz\FpmStatus\Model;
 
-use function \array_search;
-use \Hschulz\FpmStatus\Model\Entry;
+use function array_search;
 
 /**
  * Description of Report

@@ -10,67 +10,67 @@ class Process
     /**
      * @var string
      */
-    const FIELD_PID = 'pid';
+    public const FIELD_PID = 'pid';
 
     /**
      * @var string
      */
-    const FIELD_STATE = 'state';
+    public const FIELD_STATE = 'state';
 
     /**
      * @var string
      */
-    const FIELD_START_TIME = 'start time';
+    public const FIELD_START_TIME = 'start time';
 
     /**
      * @var string
      */
-    const FIELD_START_SINCE = 'start since';
+    public const FIELD_START_SINCE = 'start since';
 
     /**
      * @var string
      */
-    const FIELD_REQUESTS = 'requests';
+    public const FIELD_REQUESTS = 'requests';
 
     /**
      * @var string
      */
-    const FIELD_REQUEST_DURATION = 'request duration';
+    public const FIELD_REQUEST_DURATION = 'request duration';
 
     /**
      * @var string
      */
-    const FIELD_REQUEST_METHOD = 'request method';
+    public const FIELD_REQUEST_METHOD = 'request method';
 
     /**
      * @var string
      */
-    const FIELD_REQUEST_URI = 'request uri';
+    public const FIELD_REQUEST_URI = 'request uri';
 
     /**
      * @var string
      */
-    const FIELD_CONTENT_LENGTH = 'content length';
+    public const FIELD_CONTENT_LENGTH = 'content length';
 
     /**
      * @var string
      */
-    const FIELD_USER = 'user';
+    public const FIELD_USER = 'user';
 
     /**
      * @var string
      */
-    const FIELD_SCRIPT = 'script';
+    public const FIELD_SCRIPT = 'script';
 
     /**
      * @var string
      */
-    const FIELD_LAST_REQUEST_CPU = 'last request cpu';
+    public const FIELD_LAST_REQUEST_CPU = 'last request cpu';
 
     /**
      * @var string
      */
-    const FIELD_LAST_REQUEST_MEMORY = 'last request memory';
+    public const FIELD_LAST_REQUEST_MEMORY = 'last request memory';
 
     /**
      * The pid of the process.

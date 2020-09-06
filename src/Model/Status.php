@@ -11,91 +11,91 @@ class Status
      * Name of the array key for the pool field.
      * @var string
      */
-    const FIELD_POOL = 'pool';
+    public const FIELD_POOL = 'pool';
 
     /**
      * Name of the array key for the process manager field.
      * @var string
      */
-    const FIELD_MANAGER = 'process manager';
+    public const FIELD_MANAGER = 'process manager';
 
     /**
      * Name of the array key for the start time field.
      * @var string
      */
-    const FIELD_START_TIME = 'start time';
+    public const FIELD_START_TIME = 'start time';
 
     /**
      * Name of the array key for the start since field.
      * @var string
      */
-    const FIELD_START_SINCE = 'start since';
+    public const FIELD_START_SINCE = 'start since';
 
     /**
      * Name of the array key for the accepted connections field.
      * @var string
      */
-    const FIELD_ACCEPTED_CONN = 'accepted conn';
+    public const FIELD_ACCEPTED_CONN = 'accepted conn';
 
     /**
      * NAme of the array key for the listen queue field.
      * @var string
      */
-    const FIELD_LISTEN_QUEUE = 'listen queue';
+    public const FIELD_LISTEN_QUEUE = 'listen queue';
 
     /**
      * Name of the array key for the maximum listen queue field.
      * @var string
      */
-    const FIELD_MAX_LISTEN_QUEUE = 'max listen queue';
+    public const FIELD_MAX_LISTEN_QUEUE = 'max listen queue';
 
     /**
      * Name of the array key for the listen queue length field.
      * @var string
      */
-    const FIELD_LISTEN_QUEUE_LEN = 'listen queue len';
+    public const FIELD_LISTEN_QUEUE_LEN = 'listen queue len';
 
     /**
      * Name of the array key for the idle processes field.
      * @var string
      */
-    const FIELD_IDLE_PROCESSES = 'idle processes';
+    public const FIELD_IDLE_PROCESSES = 'idle processes';
 
     /**
      * Name of the array key for the active processes field.
      * @var string
      */
-    const FIELD_ACTIVE_PROCESSES = 'active processes';
+    public const FIELD_ACTIVE_PROCESSES = 'active processes';
 
     /**
      * Name of the array key for the total processes field.
      * @var string
      */
-    const FIELD_TOTAL_PROCESSES = 'total processes';
+    public const FIELD_TOTAL_PROCESSES = 'total processes';
 
     /**
      * Name of the array key for the maximum active processes field.
      * @var string
      */
-    const FIELD_MAX_ACTIVE_PROCESSES = 'max active processes';
+    public const FIELD_MAX_ACTIVE_PROCESSES = 'max active processes';
 
     /**
      * Name of the array key for the maximum children reached field.
      * @var string
      */
-    const FIELD_MAX_CHILDREN_REACHED = 'max children reached';
+    public const FIELD_MAX_CHILDREN_REACHED = 'max children reached';
 
     /**
      * Name of the array key for the slow requests field.
      * @var string
      */
-    const FIELD_SLOW_REQUESTS = 'slow requests';
+    public const FIELD_SLOW_REQUESTS = 'slow requests';
 
     /**
      * Name of the array key for the processes list field.
      * @var string
      */
-    const FIELD_PROCESSES = 'processes';
+    public const FIELD_PROCESSES = 'processes';
 
     /**
      * The total number of accepted connections by the pool.

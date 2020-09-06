@@ -2,9 +2,9 @@
 
 namespace Hschulz\FpmStatus\Analysis;
 
-use \Hschulz\FpmStatus\Model\PoolConfig;
-use \Hschulz\FpmStatus\Model\Report;
-use \Hschulz\FpmStatus\Model\Status;
+use Hschulz\FpmStatus\Model\PoolConfig;
+use Hschulz\FpmStatus\Model\Report;
+use Hschulz\FpmStatus\Model\Status;
 
 /**
  * StatusReporterInterface

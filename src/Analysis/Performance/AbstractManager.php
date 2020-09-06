@@ -2,10 +2,9 @@
 
 namespace Hschulz\FpmStatus\Analysis\Performance;
 
-use \Hschulz\FpmStatus\Analysis\Performance\ManagerInterface;
-use \Hschulz\FpmStatus\Model\PoolConfig;
-use \Hschulz\FpmStatus\Model\Status;
-use function \round;
+use Hschulz\FpmStatus\Model\PoolConfig;
+use Hschulz\FpmStatus\Model\Status;
+use function round;
 
 /**
  * Description of AbstractManager
