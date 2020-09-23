@@ -182,7 +182,7 @@ abstract class AbstractStatusReporter implements StatusReporterInterface
         if (!class_exists($fqns)) {
             $message = sprintf('Manager for type "%s" not found', $type);
 
-            return new Entry($message, Entry::STATUS_ERROR, Priority::HIGH);
+            return new Entry($message, Entry::STATUS_ERROR, Entry::PRIORITY_HIGH);
         }
 
         /* @var $manager ManagerInterface */
