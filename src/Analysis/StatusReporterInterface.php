@@ -1,5 +1,7 @@
 <?php
 
+declare(strict_types=1);
+
 namespace Hschulz\FpmStatus\Analysis;
 
 use Hschulz\FpmStatus\Model\PoolConfig;
