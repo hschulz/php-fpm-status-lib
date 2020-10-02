@@ -1,5 +1,7 @@
 <?php
 
+declare(strict_types=1);
+
 namespace Hschulz\FpmStatus\Model;
 
 use function array_search;
@@ -47,10 +49,21 @@ class Report
      */
     public function remove(Entry $entry): void
     {
-        $result = array_search($entry, $this->entries . true);
+        $priority = $entry->getPriority();
+        $status = $entry->getStatus();
+
+        $result = array_search($entry, $this->entries[$priority][$status], true);
 
         if ($result !== false) {
-            unset($this->entries[$result]);
+            unset($this->entries[$priority][$status][$result]);
+        }
+
+        if (empty($this->entries[$priority][$status])) {
+            unset($this->entries[$priority][$status]);
+        }
+
+        if (empty($this->entries[$priority])) {
+            unset($this->entries[$priority]);
         }
     }
 
